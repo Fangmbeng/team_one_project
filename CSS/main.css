@@ -27,7 +27,8 @@ Colors:
       "footer footer footer footer";
 
       /* Main container takes all the space */
-      height: 100vh;
+      /* TODO fix issue with container not taking 100% of the space*/
+      min-height: 100vh;
   }
   
   
@@ -76,7 +77,16 @@ Colors:
     grid-area: solutions;
   }
   
-  .solutions-text { grid-area: solutions-text; }
+.solutions-text { 
+    grid-area: solutions-text; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.solutions-text h1{
+    text-align: center;
+}
   
   .solutions-email { grid-area: solutions-email; }
   
@@ -86,11 +96,32 @@ Colors:
   
   .solutions-calendars { grid-area: solutions-calendars; }
 
+.solutions-quadrant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solutions-quadrant h3, p {
+    text-align: center;
+}
+
+.solutions-quadrant button{
+    padding: 0 3em;
+    border: solid;
+    border-color: gray;
+    /* TODO make inner button border radius not 0*/
+    border-radius: 10%;
+    background-color: white;
+}
+
+
+
 /* Footer  */
 /* TODO PROJECT style spacing, color, font */
+/* TODO make it stick to the bottom */
 .footer { 
     grid-area: footer; 
-    /* TODO change bg-color to lighter blue*/
     background-color: rgb(8, 80, 248);
     padding-bottom: 20vh;
     display: flex;
@@ -102,7 +133,6 @@ Colors:
 .footer > *{
     padding: 0.5em;
 }
-/* TODO style buttons individually */
 
 .footer .button-get-started{
     background-color: rgb(127, 209, 38);
@@ -134,4 +164,11 @@ Colors:
     color: white;
     padding: 1em;
 }
+
+.footer .dot {
+    height: 12px;
+    width: 7px;
+    background-color: white;
+    border-radius: 50%;
+  }
   
