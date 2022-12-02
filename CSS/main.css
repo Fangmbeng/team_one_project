@@ -14,7 +14,7 @@ Colors:
 
 .container {  display: grid;
     grid-template-columns: 0.4fr 1.9fr 1.4fr 0.4fr;
-    grid-template-rows: 0.4fr auto auto auto auto 30%;
+    grid-template-rows: 0.4fr auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0em 0em;
     grid-auto-flow: row;
@@ -27,7 +27,6 @@ Colors:
       "footer footer footer footer";
 
       /* Main container takes all the space */
-      /* TODO fix issue with container not taking 100% of the space*/
       min-height: 100vh;
   }
   
@@ -86,20 +85,42 @@ Colors:
 
 .solutions-text h1{
     text-align: center;
+    padding-bottom: 2em;
 }
   
-  .solutions-email { grid-area: solutions-email; }
+.solutions-email { grid-area: solutions-email; }
   
-  .solutions-task { grid-area: solutions-task; }
-  
-  .solutions-analytics { grid-area: solutions-analytics; }
-  
-  .solutions-calendars { grid-area: solutions-calendars; }
+.solutions-task { grid-area: solutions-task; }
+
+.solutions-analytics { grid-area: solutions-analytics; }
+
+.solutions-calendars { grid-area: solutions-calendars; }
+
+.solutions-left{
+    display: flex;
+    justify-content: end;
+    padding-right: 4em;
+    padding-bottom: 4em;
+}
+
+.solutions-right{
+    display: flex;
+    justify-content: start;
+    padding-left: 4em;
+    padding-bottom: 4em;
+}
+
 
 .solutions-quadrant{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.solutions-quadrant > *{
+    padding: 1em 0;
 }
 
 .solutions-quadrant h3, p {
@@ -108,22 +129,21 @@ Colors:
 
 .solutions-quadrant button{
     padding: 0 3em;
-    border: solid;
-    border-color: gray;
+    border: 2px solid gray;
     /* TODO make inner button border radius not 0*/
-    border-radius: 10%;
+    /* border-radius: 10%; */
+    border-radius: 3px;
     background-color: white;
+    font-weight: bold;
 }
-
 
 
 /* Footer  */
 /* TODO PROJECT style spacing, color, font */
-/* TODO make it stick to the bottom */
 .footer { 
     grid-area: footer; 
     background-color: rgb(8, 80, 248);
-    padding-bottom: 20vh;
+    padding-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
