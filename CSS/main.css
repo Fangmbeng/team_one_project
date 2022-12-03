@@ -1,6 +1,20 @@
+/*  
+Style agreements
+
+Colors:
+    blue: rgb(8, 80, 248)
+    green: rgb(127, 209, 38)
+*/
+
+/* Default margin and padding 0 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .container {  display: grid;
     grid-template-columns: 0.4fr 1.9fr 1.4fr 0.4fr;
-    grid-template-rows: 0.4fr auto auto auto auto 1fr;
+    grid-template-rows: 0.4fr auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0em 0em;
     grid-auto-flow: row;
@@ -11,8 +25,13 @@
       ". payments-card payments-card ."
       ". solutions solutions ."
       "footer footer footer footer";
+
+      /* Main container takes all the space */
+      min-height: 100vh;
   }
   
+
+
 .navbar { 
     grid-area: navbar;
     padding: 0;
@@ -146,15 +165,118 @@
     grid-area: solutions;
   }
   
-  .solutions-text { grid-area: solutions-text; }
+.solutions-text { 
+    grid-area: solutions-text; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.solutions-text h1{
+    text-align: center;
+    padding-bottom: 2em;
+}
   
-  .solutions-email { grid-area: solutions-email; }
+.solutions-email { grid-area: solutions-email; }
   
-  .solutions-task { grid-area: solutions-task; }
-  
-  .solutions-analytics { grid-area: solutions-analytics; }
-  
-  .solutions-calendars { grid-area: solutions-calendars; }
-  
-  .footer { grid-area: footer; }
+.solutions-task { grid-area: solutions-task; }
+
+.solutions-analytics { grid-area: solutions-analytics; }
+
+.solutions-calendars { grid-area: solutions-calendars; }
+
+.solutions-left{
+    display: flex;
+    justify-content: end;
+    padding-right: 4em;
+    padding-bottom: 4em;
+}
+
+.solutions-right{
+    display: flex;
+    justify-content: start;
+    padding-left: 4em;
+    padding-bottom: 4em;
+}
+
+
+.solutions-quadrant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.solutions-quadrant > *{
+    padding: 1em 0;
+}
+
+.solutions-quadrant h3, p {
+    text-align: center;
+}
+
+.solutions-quadrant button{
+    padding: 0 3em;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+/* Footer  */
+/* TODO style font */
+.footer { 
+    grid-area: footer; 
+    background-color: rgb(8, 80, 248);
+    padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer > *{
+    padding: 0.5em;
+}
+
+.footer .button-get-started{
+    background-color: rgb(127, 209, 38);
+    border: none;
+    border-radius: 5%;
+    padding: 0 1em;
+}
+
+.footer .button-chat{
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    padding: 0 1em;
+}
+
+.footer .footer-buttons > *{
+    margin: 0 1em
+}
+
+.footer .footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.footer .footer-links a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer .dot {
+    height: 12px;
+    width: 7px;
+    background-color: white;
+    border-radius: 50%;
+  }
   
