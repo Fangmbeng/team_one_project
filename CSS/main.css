@@ -172,17 +172,6 @@ Colors:
   
 .solutions-email { grid-area: solutions-email; }
   
-<<<<<<< HEAD
-  .solutions-task { grid-area: solutions-task; }
-  
-  .solutions-analytics { grid-area: solutions-analytics; }
-  
-  .solutions-calendars { grid-area: solutions-calendars; }
-  
-  .footer { grid-area: footer; }
-
-
-=======
 .solutions-task { grid-area: solutions-task; }
 
 .solutions-analytics { grid-area: solutions-analytics; }
@@ -283,5 +272,4 @@ Colors:
     background-color: white;
     border-radius: 50%;
   }
->>>>>>> 02594b4f0273a08eb4378b2a28c7f0945152562b
   
