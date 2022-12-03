@@ -130,8 +130,6 @@ Colors:
 .solutions-quadrant button{
     padding: 0 3em;
     border: 2px solid gray;
-    /* TODO make inner button border radius not 0*/
-    /* border-radius: 10%; */
     border-radius: 3px;
     background-color: white;
     font-weight: bold;
@@ -139,7 +137,7 @@ Colors:
 
 
 /* Footer  */
-/* TODO PROJECT style spacing, color, font */
+/* TODO style font */
 .footer { 
     grid-area: footer; 
     background-color: rgb(8, 80, 248);
@@ -161,10 +159,6 @@ Colors:
     padding: 0 1em;
 }
 
-.footer .footer-buttons > *{
-    margin: 0 1em
-}
-
 .footer .button-chat{
     background-color: white;
     border: none;
@@ -172,10 +166,14 @@ Colors:
     padding: 0 1em;
 }
 
+.footer .footer-buttons > *{
+    margin: 0 1em
+}
+
 .footer .footer-links{
     display: flex;
     justify-content: center;
-    /* TODO fix links overflow  */
+    align-items: center;
     padding: 2em;
 }
 
@@ -183,6 +181,7 @@ Colors:
     text-decoration: none;
     color: white;
     padding: 1em;
+    text-align: center;
 }
 
 .footer .dot {
