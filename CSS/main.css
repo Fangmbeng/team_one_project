@@ -292,22 +292,19 @@ grid-area: solutions;
     padding: 0.5em;
 }
 
-.footer .button-get-started{
-    background-color: rgb(127, 209, 38);
-    border: none;
-    border-radius: 5%;
-    padding: 0 1em;
-}
-
-.footer .button-chat{
+.footer .footer-buttons button{
+    margin: 0 3em;
     background-color: white;
     border: none;
-    border-radius: 5%;
-    padding: 0 1em;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 1em 2em;
+    transition-duration: 500ms;
 }
 
-.footer .footer-buttons > *{
-    margin: 0 1em
+.footer .footer-buttons button:hover{
+    background-color: rgb(127, 209, 38);
+    color: white;
 }
 
 .footer .footer-links{
@@ -320,8 +317,12 @@ grid-area: solutions;
 .footer .footer-links a{
     text-decoration: none;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
+}
+
+.footer .footer-links a:hover{
+    text-decoration: underline;
 }
 
 .footer .dot {
