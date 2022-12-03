@@ -262,11 +262,17 @@ grid-area: solutions;
 }
 
 .solutions-quadrant button{
-    padding: 0 3em;
+    padding: 1em 4em;
     border: 2px solid gray;
     border-radius: 3px;
     background-color: white;
     font-weight: bold;
+    transition-duration: 500ms;
+}
+
+.solutions-quadrant button:hover{
+    background-color: rgb(8, 80, 248);
+    color: white;
 }
 
 
