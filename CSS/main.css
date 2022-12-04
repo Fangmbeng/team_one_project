@@ -144,8 +144,41 @@ Colors:
   
   .explore-pic { grid-area: explore-pic; }
   
-  .payments-card { grid-area: payments-card; }
-  
+  .payments-card { 
+    grid-area: payments-card; 
+    display: flex;
+    border-radius: 2em;
+    background-color:  rgb(8, 80, 248);
+    margin-bottom: 4em;
+    
+}
+  .card1text{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    padding: 6em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .easypay{
+    padding-bottom: 1.5em;
+  }
+
+  .bullets{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .bullets .bullettexts{
+    padding-top: 1em;
+  }
+
+
+  .payments-card .img{
+    background-color: white;
+  }
+
   .solutions {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
