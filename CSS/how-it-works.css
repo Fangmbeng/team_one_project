@@ -11,24 +11,16 @@
     ". card card ."
     ". more-text more-text ."
     ". card2 card2 ."
-    "footer footer footer footer";
+    "footer footer footer footer"
 }
 
-.navbar { grid-area: navbar; }
-
-.focus {  display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "focus-text focus-pic";
-  grid-area: focus;
+.navbar { 
+  grid-area: navbar;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
-
-.focus-text { grid-area: focus-text; }
-
-.focus-pic { grid-area: focus-pic; }
 
 .how-it-works { 
   grid-area: how-it-works; 
