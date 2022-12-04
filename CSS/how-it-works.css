@@ -1,6 +1,6 @@
 .container {  display: grid;
   grid-template-columns: 0.4fr 2.1fr 1.2fr 0.4fr;
-  grid-template-rows: 0.4fr auto auto auto auto 9.9fr 1fr;
+  grid-template-rows: 0.4fr auto auto auto auto auto 1fr;
   grid-auto-columns: 1fr;
   gap: 0em 0em;
   grid-auto-flow: row;
@@ -37,7 +37,7 @@
   grid-area: card;
   display: flex;
   border-radius: 2em;
-  background-color: blue;
+  background-color:rgb(8, 80, 248);
 }
 
 .cardtext{
@@ -76,7 +76,8 @@
   grid-area: card2; 
   display: flex;
   border-radius: 2em;
-  background-color: blue;
+  background-color:  rgb(8, 80, 248);
+  margin-bottom: 4em;
 }
 
 .card2text{
@@ -85,5 +86,6 @@
   padding: 6em;
 }
 
-
-.footer { grid-area: footer; }
+.footer {
+  grid-area: footer;
+}
