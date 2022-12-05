@@ -231,22 +231,36 @@ Fonts:
     font-size: 20px;
     padding: 6em;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card1text ul{
+    padding: 0;
   }
 
   .easypay{
     padding-bottom: 1.5em;
   }
 
-  .bullets{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .bullets .bullettexts{
-    padding-top: 1em;
-  }
 
+.bullets .bullettexts{ 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: flex-start;
+    display: flex;
+    padding-left: -5em;
+  } 
+
+  .payments-card button{
+    display: flex;
+    border-radius: 3px;
+    width: 200px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 80, 248);
+    color: white;
+    border-color: white;
+  }
 
   .payments-card .img{
     background-color: white;
