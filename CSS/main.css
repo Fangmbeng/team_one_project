@@ -1,9 +1,17 @@
-/* Style agreements
-
+/*  
+Style agreements
 Colors:
     blue: rgb(8, 80, 248)
-    green: rgb(127, 209, 38
- */
+    green: rgb(127, 209, 38)
+Fonts:
+    font-family: Arial, Helvetica, sans-serif;
+*/
+
+/* Default margin and padding 0 */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -22,7 +30,7 @@ Colors:
       "footer footer footer footer";
 
       /* Main container takes all the space */
-      
+      min-height: 100vh;
   }
   
 
@@ -142,21 +150,69 @@ Colors:
 
 
   
-  .explore {  display: grid;
+/* Explore section styling */
+.explore {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "explore-text"
-      "explore-pic";
+        "explore-text"
+        "explore-pic";
     grid-area: explore;
-  }
-  
-  .explore-text { grid-area: explore-text; }
-  
-  .explore-pic { grid-area: explore-pic; }
-  
+    }
+      
+    .explore-text { 
+        grid-area: explore-text; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .explore-text > *{
+        margin: 1em;
+    }
+    
+    .explore-text hr{
+        width: 100%;
+    }
+    
+    .explore-pic { 
+        grid-area: explore-pic; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .explore-pic .pic-container{
+        height: 40px;
+        width:  40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .explore-pic button{
+        background-color: white;
+        transition-duration: 500ms;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 10px;
+    
+    }
+    
+    .explore-pic button:hover{
+        background-color: rgb(8, 80, 248);
+    }
+    
+    .explore-pic button:hover p{
+        color: white;
+    }
+
   .payments-card { 
     grid-area: payments-card; 
     display: flex;
@@ -192,17 +248,18 @@ Colors:
     background-color: white;
   }
 
-  .solutions {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "solutions-text solutions-text"
-      "solutions-email solutions-task"
-      "solutions-analytics solutions-calendars";
-    grid-area: solutions;
-  }
+/* Solutions section styling */
+.solutions {  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+    "solutions-text solutions-text"
+    "solutions-email solutions-task"
+    "solutions-analytics solutions-calendars";
+grid-area: solutions;
+}
   
 .solutions-text { 
     grid-area: solutions-text; 
@@ -256,15 +313,20 @@ Colors:
 }
 
 .solutions-quadrant button{
-    padding: 0 3em;
+    padding: 1em 4em;
     border: 2px solid gray;
     border-radius: 3px;
     background-color: white;
     font-weight: bold;
+    transition-duration: 500ms;
 }
 
+.solutions-quadrant button:hover{
+    background-color: rgb(8, 80, 248);
+    color: white;
+}
 
-/* Footer  */
+/* Footer section styling*/
 /* TODO style font */
 .footer { 
     grid-area: footer; 
@@ -280,22 +342,19 @@ Colors:
     padding: 0.5em;
 }
 
-.footer .button-get-started{
-    background-color: rgb(127, 209, 38);
-    border: none;
-    border-radius: 5%;
-    padding: 0 1em;
-}
-
-.footer .button-chat{
+.footer .footer-buttons button{
+    margin: 0 3em;
     background-color: white;
     border: none;
-    border-radius: 5%;
-    padding: 0 1em;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 1em 2em;
+    transition-duration: 500ms;
 }
 
-.footer .footer-buttons > *{
-    margin: 0 1em
+.footer .footer-buttons button:hover{
+    background-color: rgb(127, 209, 38);
+    color: white;
 }
 
 .footer .footer-links{
@@ -308,8 +367,12 @@ Colors:
 .footer .footer-links a{
     text-decoration: none;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
+}
+
+.footer .footer-links a:hover{
+    text-decoration: underline;
 }
 
 .footer .dot {
@@ -317,5 +380,4 @@ Colors:
     width: 7px;
     background-color: white;
     border-radius: 50%;
-  }
-  
+  }  
