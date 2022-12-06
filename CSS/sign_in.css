@@ -2,19 +2,26 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:"sign-up-area sign-in-area";
+}
+.sign-up-area p{
+    color: white;
+    font-size: x-large;
+}
 html, body{
     height: 100%;
 }
-
 #form{
     float: right;
     width: 30%;
     padding: 40px;
     align-items: center;
-    
 }
-
 #form input{
     display: inline;
     align-items: flex-start;
@@ -22,7 +29,6 @@ html, body{
     width: 500px;
     padding-bottom: 10px;
 }
-
 #form img{
     /* display: inline;
     align-self: center; */
@@ -31,18 +37,15 @@ html, body{
     padding-bottom: 20px;
     width: 20px;
 }
-
 .input-border{
     border: 1px solid lightgrey;
     border-radius: 50px;
     padding-bottom: 10px;
 }
-
 #bot-form{
     text-align: center;
     padding-top: 40px;
 }
-
 #button{
     text-decoration: none;
     box-sizing: border-box;
@@ -52,23 +55,43 @@ html, body{
     padding: 10px 50px 10px 50px;
     background-color: rgb(8, 80, 248);
 }
-
 h1{
     text-align: center;
     padding-bottom: 50px;
 }
-
 p{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 #left-img{
     float: left;
-    clip-path: ellipse(84% 100% at 15% 0%); 
+    clip-path: ellipse(84% 100% at 15% 0%);
 }
-
 #socials img{
     width: auto;
     height: 30px;
+}
+.sign-up-area { grid-area: sign-up-area;
+    background-color:blue;
+    text-align: center;
+    width: 700px;
+    height: 800px;
+    border-radius: 0 0 740px 10px;
+    background-color: rgb(20, 17, 232);
+    background-image: url(https://raw.githubusercontent.com/terrykub80/team_one_project/main/Images/Group%2015.png);
+    background-position: 80px 60px;
+    background-repeat: no-repeat;
+}
+.sign-in-area {
+    grid-area: sign-in-area;
+    display: grid;
+    background-color: #FFFFFF;
+}
+.sign-up-area button{
+    background-color: blue;
+    border-color: #FFFFFF;
+    border-radius: 14px;
+    color: #FFFFFF;
+    font-size: medium;
+    padding: 10px 29px;
 }
