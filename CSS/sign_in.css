@@ -56,6 +56,7 @@ html, body{
     color: white;
     padding: 10px 50px 10px 50px;
     background-color: rgb(8, 80, 248);
+    cursor: pointer;
 }
 h1{
     text-align: center;
@@ -98,4 +99,21 @@ p{
     text-align: center;
     padding: 8px;
     width: fit-content;
+    cursor: pointer;
+}
+.input-border input{
+    border-radius: 180px;
+    padding: 60px 75px;
+    font-size: xx-large;
+    border-bottom: 20px 10px;
+    border: 0px;
+    font-display: solid black;
+}
+
+#button:hover{
+    background-color: blueviolet;
+}
+
+.sign-up-area button:hover{
+    background-color: blueviolet;
 }
